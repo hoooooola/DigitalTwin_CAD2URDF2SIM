@@ -52,6 +52,15 @@
 | **技術棧** | 專注於 Isaac Gym GPU 邏輯 | 整合 Isaac Sim 強大的視覺與物理環境 |
 | **適合開發階段** | DVT 設計初期的多參數方案篩選 | DVT 設計後期與正式驗證前夕的準確性檢查 |
 
+從Mechanical角度來看，
+Aerial Gym 與 Pegasus Simulator 的用途其實完全不同層級。
+
+簡單講：
+
+Aerial Gym → 設計 robustness / control tolerance
+
+Pegasus → 驗證機構設計對飛行性能的影響
+
 #### 💡 給您的具體決策建議：
 
 1. **如果您要解決的是「設計迭代」的問題（如：為了修正重心，要在哪裡加裝配重？）：**

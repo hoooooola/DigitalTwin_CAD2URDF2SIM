@@ -40,11 +40,11 @@
 
 ## 🚀 Onshape 專用工作流對比
 
-| 轉換需求 | 推薦工具 | 優點 | 缺點 |
-| :--- | :--- | :--- | :--- |
-| **機器人學習/控制** | `onshape-to-robot` | 輕量化、符合 ROS 生態、物理參數精準 | 視覺細節損失較多 |
-| **視覺化渲染/數位孿生** | `Onshape Connector` | 高保真材質、即時同步、原生支援 USD | 資源佔用較高、轉換開銷大 |
-| **大型工廠環境** | `USD Layout Export` | 場景結構清晰、適合大型組裝 | 對單體機器人關節支援較弱 |
+| 轉換需求 | 推薦工具 | 優點 | 缺點 | 檔案路徑 |
+| :--- | :--- | :--- | :--- | :--- |
+| **經典機器人開發** | `onshape-to-robot` | 符合 ROS/ROS 2 生態、自動生成簡化碰撞網格、跨模擬器（PyBullet, MuJoCo） | 視覺細節較差、模型修改後需重新執行指令導出 | CAD → URDF |
+| **高階數位孿生** | `Onshape Connector (openUSD)` | Live Link 即時同步、支援物理材質（PBR）、自動處理關節約束 | 需安裝 Omniverse 環境、硬體（GPU）要求較高 | CAD → OpenUSD |
+| **場景／佈局規劃** | `USD Layout Export` | 適合大型靜態場景、架構層級清晰（Layers）、有利於多人協作 | 缺乏運動學連桿（Joints），機器人不能動，僅限靜態 | CAD → USD |
 
 ---
 > [!IMPORTANT]
